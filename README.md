@@ -12,3 +12,4 @@ https://www.mediawiki.org/wiki/Manual:Skin_autodiscovery
 
 
 
+当前已知的问题：JS和CSS由于文件路径变更导致无法加载网页崩溃
