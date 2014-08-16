@@ -5,7 +5,7 @@
 
 // Set to "true" if you'd like the content actions enabled
 // Such as Edit, Discussion, History, Watch, etc.
-$Display_Actions = false;
+$Display_Actions = true;
 $GLOBALS["Display_Actions"] = $Display_Actions;
 
 
@@ -48,9 +48,9 @@ class wptouchTemplate extends QuickTemplate {
 		<?php $this->html('headlinks') ?>
 		<title><?php $this->text('pagetitle') ?></title>
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<link rel="stylesheet" href="/skins/wptouch/css/main.css" type="text/css" media="screen" />
-		<script async type='text/javascript' src='/skins/wptouch/javascript/jquery.js'></script>
-		<script async type='text/javascript' src='/skins/wptouch/javascript/core.js'></script>
+		<link rel="stylesheet" href="<?php $this->text('stylepath') ?>/wptouch/css/main.css" type="text/css" media="screen" />
+		<script async type='text/javascript' src='<?php $this->text('stylepath') ?>/wptouch/javascript/jquery.js'></script>
+		<script async type='text/javascript' src='<?php $this->text('stylepath') ?>/wptouch/javascript/core.js'></script>
 		<script type="text/javascript">
 			addEventListener("load", function() { 
 				setTimeout(hideURLbar, 0); }, false);
@@ -58,18 +58,6 @@ class wptouchTemplate extends QuickTemplate {
 				window.scrollTo(0,1);
 			}
 		</script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-18669495-4']);
-  _gaq.push(['_setDomainName', 'moegirl.org']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
 	</head>
 <body class="skated-wptouch-bg">
 
@@ -225,11 +213,11 @@ class wptouchTemplate extends QuickTemplate {
 	<div class="ads-main">
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 萌百移动版 -->
+<!-- 萌娘移动广告320*100 -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:320px;height:50px"
+     style="display:inline-block;width:320px;height:100px"
      data-ad-client="ca-pub-1103773884433732"
-     data-ad-slot="5084370860"></ins>
+     data-ad-slot="8341993468"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
